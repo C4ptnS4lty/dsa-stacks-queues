@@ -1,0 +1,15 @@
+You would want to use a doubly linked list so that each node contains
+this.val; where val is a url
+this.first; the first/default brpwser url
+this.last; the last one visited before going backwards. Will be set differently if a new url path comes in.
+this.next; the url node that was clicked after the current url
+this.prev; the url node that was before the current url.
+
+
+also include two functions for traversing.
+
+function traverseforward() will set current node to either the next entered url or a url already saved
+note that traverse forward will replace this.next with the newest chosen url, whether typed, selected, or saved.
+
+function traversebackward() will set current node to previous url if available.
+
